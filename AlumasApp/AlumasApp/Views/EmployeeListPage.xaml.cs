@@ -24,6 +24,7 @@ namespace AlumasApp.Views
         }
         private async void LoadEmployeeList()
         {
+            GlobalObjects.MyLocaBranch.BranchId = 4;
             LvList.ItemsSource = await employeeslistViewModel.GetEmployeesAsync(GlobalObjects.MyLocaBranch.BranchId);
         }
     }

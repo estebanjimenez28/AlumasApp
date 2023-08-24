@@ -24,6 +24,7 @@ namespace AlumasApp.Views
         }
         private async void LoadDeliveryList()
         {
+            GlobalObjects.MyLocalClient.ClientId = 1;
             LvList.ItemsSource = await deliveryListViewModel.GetDeliveriesAsync(GlobalObjects.MyLocalClient.ClientId);
         }
     }

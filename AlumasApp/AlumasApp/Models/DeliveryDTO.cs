@@ -13,7 +13,7 @@ namespace AlumasApp.Models
        
         public RestRequest Request { get; set; }
         public int DeliveryId { get; set; }
-        public string Address { get; set; }
+        public string Address { get; set; } = null!;
         public string Description { get; set; } = null!;
         public int ClientsClientId { get; set; }
         public bool Active { get; set; }
